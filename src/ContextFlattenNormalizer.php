@@ -2,11 +2,14 @@
 
 declare(strict_types=1);
 
-namespace PHPStreamServer\Plugin\Logger\Internal\FlattenNormalizer;
+namespace PHPStreamServer\Plugin\Logger;
 
-/**
- * @internal
- */
+use PHPStreamServer\Plugin\Logger\Internal\FlattenNormalizer\FlattenDateTime;
+use PHPStreamServer\Plugin\Logger\Internal\FlattenNormalizer\FlattenEnum;
+use PHPStreamServer\Plugin\Logger\Internal\FlattenNormalizer\FlattenException;
+use PHPStreamServer\Plugin\Logger\Internal\FlattenNormalizer\FlattenObject;
+use PHPStreamServer\Plugin\Logger\Internal\FlattenNormalizer\FlattenResource;
+
 final class ContextFlattenNormalizer
 {
     private const MAX_DEPTH = 32;
